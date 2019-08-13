@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+    <name>CacheFill_Connector</name>
+    <version>1.0.2</version>
+    <stability>stable</stability>
+    <license uri="http://www.harapartners.com/terms/eula">Hara Partners End User License Agreement</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>CACHE FILL prefills your cache and speeds up every page of your website before your customers visit your website.</summary>
+    <description>CACHE FILL is an easy to use way to speed up your web server browsing experience to your customers and maximizes the value of your hosting and caching technologies.&#xD;
+&#xD;
+This Magento plug-in instantly enables CACHE FILL for your website and lets you run CACHE FILL any time to speed up your website.&#xD;
+&#xD;
+Use CACHE FILL every time you refresh and clear your server cache to fill it up again.</description>
+    <notes>Stable</notes>
+    <authors><author><name>CACHE FILL</name><user>cachefill</user><email>magento@cachefill.com</email></author></authors>
+    <date>2013-11-15</date>
+    <time>22:45:46</time>
+    <contents><target name="mageetc"><dir name="modules"><file name="CacheFill_Connector" hash=""/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.10.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
