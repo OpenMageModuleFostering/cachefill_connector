@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <name>CacheFill_Connector</name>
-    <version>1.0.2</version>
+    <version>2.0.1</version>
     <stability>stable</stability>
     <license uri="http://www.harapartners.com/terms/eula">Hara Partners End User License Agreement</license>
     <channel>community</channel>
@@ -15,7 +15,7 @@ Use CACHE FILL every time you refresh and clear your server cache to fill it up 
     <notes>Stable</notes>
     <authors><author><name>CACHE FILL</name><user>cachefill</user><email>magento@cachefill.com</email></author></authors>
     <date>2013-11-15</date>
-    <time>22:45:46</time>
+    <time>23:17:42</time>
     <contents><target name="mageetc"><dir name="modules"><file name="CacheFill_Connector" hash=""/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.10.0</min><max>6.0.0</max></php></required></dependencies>
