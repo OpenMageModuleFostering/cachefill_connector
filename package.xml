@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <name>CacheFill_Connector</name>
-    <version>2.0.3</version>
+    <version>2.0.4</version>
     <stability>stable</stability>
     <license uri="http://www.harapartners.com/terms/eula">Hara Partners End User License Agreement</license>
     <channel>community</channel>
@@ -15,8 +15,8 @@ Use CACHE FILL every time you refresh and clear your server cache to fill it up 
     <notes>Stable</notes>
     <authors><author><name>CACHE FILL</name><user>cachefill</user><email>magento@cachefill.com</email></author></authors>
     <date>2013-11-26</date>
-    <time>18:49:07</time>
-    <contents><target name="mageetc"><dir name="modules"><file name="CacheFill_Connector.xml" hash=""/></dir></target></contents>
+    <time>18:54:13</time>
+    <contents><target name="magecommunity"><dir name="Cachefill"><dir name="Connector"><dir name="Block"><dir name="Adminhtml"><dir name="System"><dir name="Config"><file name="Login.php" hash="a2b3a8cd6d8f4ab6c643327c31d2d3ca"/><file name="Startnew.php" hash="4a0901d1d5e174a186a0dcc8a66c418d"/><file name="Viewlast.php" hash="91bfe26d669f2c0a6c532e4d7db60d4d"/></dir></dir></dir><dir name="Rewrite"><dir name="Adminhtml"><file name="Cache.php" hash="7711a2d617e1c2ce6b3fcb2337a5e0b4"/></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="86318acfbe973aa6bf92f9b36989fdb8"/></dir><dir name="Model"><dir name="Mysql4"><dir name="Remoteproc"><file name="Collection.php" hash="e565d3db46bc43b00bb1641c3d8db10b"/></dir><file name="Remoteproc.php" hash="58a8de2b6e8e700aea2f04fda007fb7e"/></dir><file name="Remoteproc.php" hash="fdd8afefc2a9431e16b0317792e43f1f"/><dir name="Rewrite"><dir name="Paypal"><dir name="Api"><file name="Nvp.php" hash="d3eb6a78a8382bf23f995e099def7b18"/></dir><file name="Config.php" hash="0790d2b007551d55610de68952f36c6c"/></dir></dir></dir><dir name="controllers"><dir name="Adminhtml"><file name="ServiceController.php" hash="d4b28f27bcc325ea3f6e607e9721ab6e"/><dir name="System"><dir name="Config"><file name="AjaxController.php" hash="d7255967773c5d60b30f883bc61511f2"/></dir></dir></dir></dir><dir name="etc"><file name="config.xml" hash="27a229a6aece1174d3709e24c35b79bb"/><file name="system.xml" hash="0a1bb4c42f743fd22852d1662e2868df"/></dir><dir name="sql"><dir name="cfconnector_setup"><file name="mysql4-install-1.0.0.php" hash="65eac1a3a4b068b391b05f6ad42c8678"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Cachefill_Connector.xml" hash="b84276cba22101c3634110b26bd0afa8"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
 </package>

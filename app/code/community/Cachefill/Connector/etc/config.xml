@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<!--
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the End User Software Agreement (EULA).
+ * It is also available through the world-wide-web at this URL:
+ * http://www.harapartners.com/license
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to eula@harapartners.com so we can send you a copy immediately.
+ * 
+ -->
+<config>
+    <modules>
+        <Cachefill_Connector>
+            <version>1.0.0</version>
+        </Cachefill_Connector>
+    </modules>	
+    <global>
+		<blocks>
+			<adminhtml>
+                <rewrite>
+                    <cache>Cachefill_Connector_Block_Rewrite_Adminhtml_Cache</cache>
+                </rewrite>
+            </adminhtml>
+			<cfconnector>
+				<class>Cachefill_Connector_Block</class>
+			</cfconnector>
+		</blocks>
+		<helpers>
+			<cfconnector>
+				<class>Cachefill_Connector_Helper</class>
+			</cfconnector>
+		</helpers>
+		<models>
+			<cfconnector>
+				<class>Cachefill_Connector_Model</class>
+				<resourceModel>cfconnector_mysql4</resourceModel>
+			</cfconnector>
+			<paypal>
+				<rewrite>
+					<!-- /* Compatibility for Staging server SSL verification */ -->
+					<config>Cachefill_Connector_Model_Rewrite_Paypal_Config</config>
+					<api_nvp>Cachefill_Connector_Model_Rewrite_Paypal_Api_Nvp</api_nvp>
+				</rewrite>
+			</paypal>
+            <cfconnector_mysql4>
+                <class>Cachefill_Connector_Model_Mysql4</class>
+                <entities>
+                    <remoteproc>
+                        <table>cfconnector_remoteproc</table>
+                    </remoteproc>
+                </entities>
+            </cfconnector_mysql4>
+		</models>
+		<resources>
+            <cfconnector_setup>
+                <setup>
+                    <module>Cachefill_Connector</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </cfconnector_setup>
+        </resources>
+    </global>
+	<admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <cfconnector before="Mage_Adminhtml">Cachefill_Connector_Adminhtml</cfconnector>
+                    </modules>
+                </args>
+            </adminhtml>
+            <cfconnector_adminhtml>
+                <use>admin</use>
+                <args>
+                    <module>Cachefill_Connector_Adminhtml</module>
+                    <frontName>cfconnector_adminhtml</frontName>
+                </args>
+            </cfconnector_adminhtml>
+        </routers>
+    </admin>
+	<adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <cfconnector translate="title" module="cfconnector">
+                                            <title>CACHE FILL Connector</title>
+                                        </cfconnector>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+	<default>
+		<cfconnector>
+			<general>
+				<is_enabled>1</is_enabled>
+			</general>
+		</cfconnector>
+		<paypal>
+			<!-- /* Compatibility for Staging server SSL verification */ -->
+            <wpp>
+				<button_source_ec>Hara_SI_MagentoCE_PPA</button_source_ec>
+				<button_source_dp>Hara_SI_MagentoCE_PPA</button_source_dp>
+            </wpp>
+        </paypal>
+	</default>
+</config>
