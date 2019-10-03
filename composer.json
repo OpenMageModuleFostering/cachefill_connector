@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/CacheFill_Connector",
+    "name": "OpenMageModuleFostering\/CacheFill_Connector",
     "type": "magento-module",
     "license": "Hara-Partners-End-User-License-Agreement",
     "homepage": "",
     "description": "CACHE FILL prefills your cache and speeds up every page of your website before your customers visit your website.",
     "authors": [
-    {
-        "name": "CACHE FILL",
-        "email": "magento@cachefill.com"
-    }
-],
+        {
+            "name": "CACHE FILL",
+            "email": "magento@cachefill.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
